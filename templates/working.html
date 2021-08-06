@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Diabetes Predictor</title>
+</head>
+
+<body>
+    <center>
+        <br>
+        <div class="container">
+            <h3>How the result is predicted?</h3>
+            <br><br>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="/working">Diabetes Predictor</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="container-sm">
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/table">Table</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/working">Working<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/aboutus">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <br><br>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="https://source.unsplash.com/720x600/?hospital" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Health</h5>
+                        <p class="card-text">Results are trained on a reliable dataset with appropriate Machine Learning
+                            model. The results are highly accuracate.</p>
+                        <p class="card-text"><small class="text-muted">Last updated today</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/720x600/?coding" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">K Neighbors Classifier</h5>
+                        <p class="card-text">The principle behind nearest neighbor methods is to find a predefined
+                            number of training samples closest in distance to the new point, and predict the label from
+                            these. The number of samples can be a user-defined constant (k-nearest neighbor learning),
+                            or vary based on the local density of points (radius-based neighbor learning).</p>
+                        <p class="card-text"><small class="text-muted">Last updated today</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/720x600/?coding,math" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Component Analysis</h5>
+                        <p class="card-text">Neighborhood Components Analysis (NCA, NeighborhoodComponentsAnalysis) is a
+                            distance metric learning algorithm which aims to improve the accuracy of nearest neighbors
+                            classification compared to the standard Euclidean distance. The algorithm directly maximizes
+                            a stochastic variant of the leave-one-out k-nearest neighbors (KNN) score on the training
+                            set. It can also learn a low-dimensional linear projection of data that can be used for data
+                            visualization and fast classification.</p>
+                        <p class="card-text"><small class="text-muted">Last updated today</small></p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="jumbotron jumbotron-fluid">
+                <h1 class="display-4">K Neighbors Classifier</h1>
+                <p class="lead">sklearn.neighbors provides functionality for unsupervised and supervised
+                    neighbors-based learning methods. Unsupervised nearest neighbors is the foundation of many
+                    other learning methods, notably manifold learning and spectral clustering. Supervised
+                    neighbors-based learning comes in two flavors: classification for data with discrete labels,
+                    and regression for data with continuous labels.</p>
+                <br><br>
+                <p class="lead">The principle behind nearest neighbor methods is to find a predefined number of training
+                    samples closest in distance to the new point, and predict the label from these. The number of
+                    samples can be a user-defined constant (k-nearest neighbor learning), or vary based on the local
+                    density of points (radius-based neighbor learning). The distance can, in general, be any metric
+                    measure: standard Euclidean distance is the most common choice. Neighbors-based methods are known as
+                    non-generalizing machine learning methods, since they simply “remember” all of its training data
+                    (possibly transformed into a fast indexing structure such as a Ball Tree or KD Tree).
+
+                </p>
+            </div>
+
+            <div class="jumbotron jumbotron-fluid">
+
+                <h1 class="display-4">Why K-Neighbors-Classifier?</h1>
+                <p class="lead">The K-neighbors classification in KNeighborsClassifier is the most commonly used
+                    technique. The optimal choice of the value is highly data-dependent: in general a larger K
+                    suppresses
+                    the effects of noise, but makes the classification boundaries less distinct.
+
+                    In cases where the data is not uniformly sampled, radius-based neighbors classification in
+                    RadiusNeighborsClassifier can be a better choice. The user specifies a fixed radius , such that
+                    points in sparser neighborhoods use fewer nearest neighbors for the classification. For
+                    high-dimensional parameter spaces, this method becomes less effective due to the so-called “curse of
+                    dimensionality”.</p>
+
+            </div>
+        </div>
+
+
+    </center>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
